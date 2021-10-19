@@ -1,2 +1,23 @@
 
-GET http://localhost:3001/api/v1/post
+# GET http://localhost:3001/api/v1/post
+
+ GET http://localhost:3001/api/v1/get-todo-list
+
+# POST http://localhost:3001/api/v1/add-todo
+# Content-Type: application/json
+
+# {
+#         "title": "want to play crickt tomo",
+#         "desc" : "at galle fotrt"
+# }
+
+# PUT  http://localhost:3001/api/v1/edit-todo?id=T4lKQSiiBXY8O2LrRolb
+# Content-Type: application/json
+
+# {
+#         "title": "want to play crickt ",
+#         "desc" : "at galle fotrt"
+# }
+
+
+# DELETE   http://localhost:3001/api/v1/delete-todo?id=qA9fkLFtnZTh2jSPH4Jr

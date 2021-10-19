@@ -9,6 +9,12 @@ const port = process.env.PORT || 3001
 app.use(express.json());
 app.use(cors())
 
+const fs = require('firebase-admin');
+const serviceAccount = require('./friebase/todo-app-aefda-firebase-adminsdk-k85ak-ec37f8d6f5.json')
+
+fs.initializeApp({
+    credential: fs.credential.cert(serviceAccount)
+});
 
 app.use((req, res, next) => {
     res.header('Access-Control-Allow-Origin', '*');
